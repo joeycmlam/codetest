@@ -1,8 +1,12 @@
+import log4js from "log4js";
 
 export class Solution {
 
-    constructor() {
 
+
+    constructor() {
+        this.logger = log4js.getLogger();
+        this.logger.level = "debug";
     }
 
     /**
@@ -18,18 +22,14 @@ export class Solution {
 
     twoSum = function (nums, targets) {
         let result = [];
-        let a = 0;
-        let b = 0;
         let i = 0;
         let j = 0;
-        let  found = false;
+        let found = false;
 
         for (i = 0; i < nums.length; i ++) {
-            a = nums[i];
             for (j = i+1; j < nums.length - 1; j++) {
-                b = nums[j];
 
-                if ((a + b) == targets) {
+                if ((nums[i] + nums[j]) == targets) {
                     found = true;
                     break;
                 }
@@ -42,6 +42,41 @@ export class Solution {
         if (found) {
             result.push(i);
             result.push(j);
+        }
+
+        return result;
+    }
+
+
+    twoSumAlgo = function (nums, targets) {
+        let result = [];
+        this.logger.info(`before: ${nums}`);
+        nums.sort();
+        let left = 0;
+        let right = nums.length - 1;
+        let found = false;
+
+        for (let i = 0; i < nums.length; i++) {
+
+            let a = nums[left];
+            let b = nums[right];
+            let sum = a + b;
+            if (sum == targets) {
+                found = true;
+                break;
+            } else if (sum > targets) {
+                // move left
+                right = right - 1;
+            } else if (sum < targets) {
+                //move to right
+                left = left + 1;
+            }
+
+        }
+
+        if (found) {
+            result.push(left);
+            result.push(right);
         }
 
         return result;

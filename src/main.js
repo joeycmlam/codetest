@@ -10,9 +10,9 @@ function main() {
     // let result = sln.multiply(1, 9)
 
     let result= [];
-    let input = [1, 2, 3, 4, 5];
-    let target = 9;
-    result = sln.twoSum(input, target)
+    let input = [2, 4, 6,  5, 3, 1];
+    let target = 7;
+    result = sln.twoSumAlgo(input, target)
     logger.info(`intput = ${input} target = ${target}`);
     logger.info(`result = ${result}`)
 }

@@ -6,8 +6,8 @@ const logger = log4js.getLogger();
 
 function main() {
     logger.level = "debug";
-    const sln = new Solution(1, 9);
-    let result = sln.twoSum()
+    const sln = new Solution();
+    let result = sln.multiply(1, 9)
     console.log(`result = ${result}`)
     logger.info(`result = ${result}`)
 }

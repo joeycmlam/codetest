@@ -1,21 +1,22 @@
 
 export class Solution {
 
-    constructor(nums, targets) {
-        this.nums = nums;
-        this.targets = targets;
+    constructor() {
+
     }
 
     /**
-     * @param {number[]} nums
-     * @param {number} target
      * @return {number}
+     * @param num1
+     * @param num2
      */
-    twoSum = function() {
+    multiply = function(num1, num2) {
 
-        const result = this.nums * this.targets;
+        const result = num1 * num2;
         return result;
     };
+
+
 }
 
 

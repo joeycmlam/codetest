@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js -r features/step_definition"
+    "test": "npx cucumber-js -r features/step_definitions"
   },
   "keywords": [],
   "author": "",

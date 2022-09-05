@@ -1,6 +1,6 @@
-const Solution = require('./Solution.js');
+const Solution = require('./Solution');
 const log4js = require('log4js');
-const Greeter = require('./greeter.js');
+const Greeter = require('./greeter');
 const calculator = require('./calculator');
 
 const logger = log4js.getLogger();
@@ -18,8 +18,8 @@ function testCal() {
 
 function test() {
 
-    const hello = new Greeter();
-    logger.info(hello.sayHello());
+    const msg = new Greeter().sayHello();
+    logger.info(msg);
 }
 
 function challenge() {

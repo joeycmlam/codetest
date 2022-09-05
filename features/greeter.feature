@@ -1,5 +1,5 @@
 Feature: Greeting
 
-  Scenario: say hello
-    When the greeter say hello
+  Scenario: Say hello
+    When the greeter says hello
     Then I should have heard "hello"

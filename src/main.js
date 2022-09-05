@@ -37,8 +37,8 @@ function challenge() {
 function main() {
     logger.level = "debug";
     // challenge();
-    test();
-    // testCal();
+    // test();
+    testCal();
 }
 
 main();

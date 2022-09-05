@@ -5,9 +5,9 @@ class Calculator {
         this.y = y;
     }
 
-    addNumber() {
+    addNumber () {
         this.result = this.x + this.y;
-    }
+    };
 
     getResult() {
         return this.result;

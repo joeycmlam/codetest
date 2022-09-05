@@ -1,11 +1,28 @@
-import {Solution} from './Solution.js'
-import log4js from "log4js";
-
+const Solution = require('./Solution.js');
+const log4js = require('log4js');
+const Greeter = require('./greeter.js');
+const calculator = require('./calculator');
 
 const logger = log4js.getLogger();
 
-function main() {
-    logger.level = "debug";
+function testCal() {
+
+    const a = 1;
+    const b = 2;
+    const cal = new calculator(a, b);
+    cal.add();
+    const result = cal.getResult();
+    logger.info(`${a} + ${b} = ${result}`);
+
+}
+
+function test() {
+
+    const hello = new Greeter();
+    logger.info(hello.sayHello());
+}
+
+function challenge() {
     const sln = new Solution();
     // let result = sln.multiply(1, 9)
 
@@ -15,6 +32,13 @@ function main() {
     result = sln.twoSumAlgo(input, target)
     logger.info(`intput = ${input} target = ${target}`);
     logger.info(`result = ${result}`)
+}
+
+function main() {
+    logger.level = "debug";
+    // challenge();
+    test();
+    // testCal();
 }
 
 main();

@@ -1,7 +1,8 @@
-import log4js from "log4js";
+// import log4js from "log4js";
 
-export class Solution {
+const log4js = require('log4js');
 
+class Solution {
 
 
     constructor() {
@@ -83,6 +84,8 @@ export class Solution {
     }
 
 }
+
+module.exports = Solution
 
 
 

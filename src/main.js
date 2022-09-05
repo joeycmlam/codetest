@@ -1,4 +1,4 @@
-const Solution = require('./Solution');
+const Solution = require('./solution');
 const log4js = require('log4js');
 const Greeter = require('./greeter');
 const calculator = require('./calculator');
@@ -36,9 +36,9 @@ function challenge() {
 
 function main() {
     logger.level = "debug";
-    // challenge();
+    challenge();
     // test();
-    testCal();
+    // testCal();
 }
 
 main();

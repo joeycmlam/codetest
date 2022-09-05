@@ -10,7 +10,7 @@ function testCal() {
     const a = 1;
     const b = 2;
     const cal = new calculator(a, b);
-    cal.add();
+    cal.addNumber();
     const result = cal.getResult();
     logger.info(`${a} + ${b} = ${result}`);
 

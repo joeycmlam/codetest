@@ -1,6 +1,21 @@
 Feature: calcultor
 
-  Scenario: simple case
-    Given the numbers 1 and 2
+  Scenario Template: positive cases
+    Given the number <x> and <y>
     When they are added together
-    Then should the result be 3
+    Then the result should be <z>
+
+    Examples:
+      | x | y | z |
+      | 1 | 2 | 3 |
+      | 2 | 3 | 5 |
+
+  Scenario Template: negative case
+    Given the number <x> and <y>
+    When they are added together
+    Then the result should be <z>
+
+    Examples:
+      | x | y  | z  |
+      | 1 | -2 | -1 |
+      | 2 | -3 | -1 |

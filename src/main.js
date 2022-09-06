@@ -1,6 +1,6 @@
-const Solution = require('./solution');
+const solution = require('./solution');
 const log4js = require('log4js');
-const Greeter = require('./greeter');
+const greeter = require('./greeter');
 const calculator = require('./calculator');
 
 const logger = log4js.getLogger();
@@ -18,12 +18,12 @@ function testCal() {
 
 function test() {
 
-    const msg = new Greeter().sayHello();
+    const msg = new greeter().sayHello();
     logger.info(msg);
 }
 
 function challenge() {
-    const sln = new Solution();
+    const sln = new solution();
     // let result = sln.multiply(1, 9)
 
     let result= [];

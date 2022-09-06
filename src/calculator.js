@@ -1,12 +1,11 @@
 class Calculator {
 
-
     constructor(x, y) {
         this.x = x;
         this.y = y;
     }
 
-    addNumber () {
+    addNumber (){
         this.result = (this.x + this.y);
     };
 

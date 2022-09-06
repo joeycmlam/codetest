@@ -1,6 +1,6 @@
 Feature: two sum algo
 
-  Scenario Outline: simple case
+  Scenario Outline: two sum simple case
     Given provide an array "<list_num>" and <target>
     When do the algo
     Then get "<result>"

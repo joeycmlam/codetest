@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/cucumber-js -r features/step_definitions --publish ",
     "test_cal": "cucumber-js --name 'positive cases' --publish",
-    "test_twosum": "cucumber-js --name 'two sum simple case'"
+    "test_twosum": "cucumber-js --name 'two sum simple case'",
+    "test_cal_all": "cucumber-js features/calculator.feature --publish"
   },
   "keywords": [],
   "author": "",

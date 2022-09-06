@@ -20,6 +20,6 @@ Then('get {string}', function (string) {
     // Write code here that turns the phrase above into concrete actions
     const actualResult = this.sln.twoSum(this.nums, this.target);
     const expectedResult = string.split(',').map(Number);
-    assert.equal(actualResult, expectedResult);
+    assert.deepEqual(actualResult, expectedResult);
 });
 
